@@ -1,0 +1,44 @@
+{
+    "iphones": [
+        {
+            "id": "iphone-6",
+            "nom": "iPhone 6",
+            "image": "iphone-6.png",
+            "reparations": [
+                { "nom": "Écran Original" },
+                { "nom": "Écran Premium" },
+                { "nom": "Écran Eco" },
+                { "nom": "Batterie" },
+                { "nom": "Connecteur de Charge" },
+                { "nom": "Diagnostic Expert" },
+                { "nom": "Désoxydation" },
+                { "nom": "Micro" },
+                { "nom": "Haut-Parleur" },
+                { "nom": "Caméra Arrière" },
+                { "nom": "Écouteur interne" },
+                { "nom": "Bouton Volume" },
+                { "nom": "Bouton Power" },
+                { "nom": "Vibreur" },
+                { "nom": "Lentille Caméra arrière" },
+                { "nom": "Vitre arrière" },
+                { "nom": "Film Hydrogel" },
+                { "nom": "Restauration Usine" },
+                { "nom": "Récupération de données" },
+                { "nom": "Option Réparation Express" }
+            ]
+        },
+        {
+            "id": "iphone-6-plus",
+            "nom": "iPhone 6 Plus",
+            "image": "iphone-6-plus.png",
+            "reparations": [ ... ]
+        },
+        {
+            "id": "iphone-7",
+            "nom": "iPhone 7",
+            "image": "iphone-7.png",
+            "reparations": [ ... ]
+        },
+        ...
+    ]
+}
