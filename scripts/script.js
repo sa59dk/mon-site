@@ -1,4 +1,15 @@
 alert("Le script JavaScript est bien chargé !");
+fetch("data/iphones.json")
+  .then(response => response.json())
+  .then(data => {
+    alert("JSON chargé avec succès !");
+    console.log("Données du JSON :", data);
+    // ton code pour afficher les données
+  })
+  .catch(error => {
+    alert("Erreur lors du chargement du JSON !");
+    console.error("Erreur JSON :", error);
+  });
 document.addEventListener("DOMContentLoaded", function () {
     fetch("data/iphones.json")
         .then(response => response.json())
