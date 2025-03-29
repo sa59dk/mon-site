@@ -1,3 +1,4 @@
+alert("Le script JavaScript est bien chargé !");
 document.addEventListener("DOMContentLoaded", function () {
     fetch("data/iphones.json")
         .then(response => response.json())
