@@ -1,9 +1,10 @@
 alert("Le script JavaScript est bien chargé !");
-fetch("data/iphones.json")
+fetch("data/iphones.txt")
   .then(response => response.json())
   .then(data => {
     alert("JSON chargé avec succès !");
     console.log("Données du JSON :", data);
+    document.body.innerHTML += "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
     // ton code pour afficher les données
   })
   .catch(error => {
