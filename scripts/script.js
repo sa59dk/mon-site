@@ -1,16 +1,3 @@
-alert("Le script JavaScript est bien chargé !");
-fetch("data/iphones.txt")
-  .then(response => response.json())
-  .then(data => {
-    alert("JSON chargé avec succès !");
-    console.log("Données du JSON :", data);
-    document.body.innerHTML += "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
-    // ton code pour afficher les données
-  })
-  .catch(error => {
-    alert("Erreur lors du chargement du JSON !");
-    console.error("Erreur JSON :", error);
-  });
 document.addEventListener("DOMContentLoaded", function () {
     fetch("data/iphones.txt")
         .then(response => response.json())
