@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("data/iphones.json")
+    fetch("data/iphones.txt")
         .then(response => response.json())
         .then(data => {
+            console.log(data); // Affiche les données dans la console
+            alert('Données récupérées !'); // Vérifie si les données sont récupérées
+
             const iphoneList = document.getElementById("iphone-list");
             const repairList = document.getElementById("repair-list");
             const iphoneTitle = document.getElementById("iphone-title");
@@ -37,5 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     iphoneTitle.textContent = "iPhone non trouvé";
                 }
             }
+        })
+        .catch(error => {
+            console.error('Erreur de chargement :', error); // Affiche l'erreur si ça échoue
+            alert('Erreur de chargement du fichier.');
         });
 });
