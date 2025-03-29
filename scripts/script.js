@@ -11,7 +11,7 @@ fetch("data/iphones.json")
     console.error("Erreur JSON :", error);
   });
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("data/iphones.json")
+    fetch("data/iphones.txt")
         .then(response => response.json())
         .then(data => {
             const iphoneList = document.getElementById("iphone-list");
